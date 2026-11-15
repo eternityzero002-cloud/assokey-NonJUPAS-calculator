@@ -1,0 +1,25 @@
+{
+  "name": "AssoKey Non-JUPAS 升學預測計算機",
+  "short_name": "AssoKey 計算機",
+  "description": "由 AssoKey 開發之八大 Non-JUPAS 升學落點預測與錄取率計算工具",
+  "start_url": "/assokey-NonJUPAS-calculator/index.html",
+  "scope": "/assokey-NonJUPAS-calculator/",
+  "display": "standalone",
+  "background_color": "#1b5e55",
+  "theme_color": "#1b5e55",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "AssoKey-removebg-preview.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "AssoKey-removebg-preview.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
