@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>AssoKey Non-JUPAS 計算機 V2.0.9</title>
+    <title>AssoKey Non-JUPAS 計算機 V2.0.11</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
@@ -75,7 +75,7 @@
             <!-- 主標題與版本號 -->
             <h1 class="text-2xl md:text-3xl font-black tracking-wide text-white flex items-center justify-center gap-2 flex-wrap">
                 <span>Non-JUPAS 計算機</span>
-                <span class="text-[#7ce0b8] font-normal">V2.0.9</span>
+                <span class="text-[#7ce0b8] font-normal">V2.0.11</span>
             </h1>
 
             <!-- 團隊副標題 -->
@@ -459,13 +459,13 @@
             <div class="mt-8 pt-3 border-t border-slate-100">
                 <div class="bg-slate-50/70 border border-slate-200/70 rounded-xl p-3">
                     <div class="flex items-center justify-between text-[11px] text-slate-400 font-bold mb-1.5 px-1">
-                        <span>🕒 AssoKey 升學預測計算機 · 研發更新日誌 (2026.09 - 2026.11 | V1.0.1 ~ V2.0.9 正式版)</span>
+                        <span>🕒 AssoKey 升學預測計算機 · 研發更新日誌 (2026.09 - 2026.11 | V1.0.1 ~ V2.0.11 正式版)</span>
                         <span class="text-[10px] font-normal text-slate-400">自動滾動 · 觸碰或滑鼠移入可暫停翻閱</span>
                     </div>
                     <div id="changelog-scroll-box" class="h-28 overflow-y-auto text-[11px] text-slate-400 leading-relaxed space-y-2 px-1 select-text">
                         <p>本更新日誌記錄了 AssoKey Non-JUPAS 升學預測計算機 在過去兩個月（2026 年 9 月至 11 月）期間，從最初粗糙的內部 Excel 查表原型，歷經 48 次演化迭代，最終構建為具備「正反向同源雙引擎」、「跨年度動態加權」、「黃白雙軌數據完全隔離」與「專業壁壘防呆」的專業級升學決策系統之全過程。</p>
                         <p class="font-bold text-slate-500">研發歷程總覽 (Milestone Overview)</p>
-                        <p>[Phase 1: 數據清洗與原型驗證] V1.0.1 ~ V1.0.5 (Day 1 - Day 12)<br>[Phase 2: 雙向演算法與權重建模] V1.0.6 ~ V1.0.11 (Day 13 - Day 25)<br>[Phase 3: 專科學術壁壘與精準分流] V1.0.12 ~ V1.0.17 (Day 26 - Day 38)<br>[Phase 4: 極端值保護與年度衰減] V1.0.18 ~ V1.0.22 (Day 39 - Day 48)<br>[Phase 5: 產品化、商業轉化與介面重構] V1.0.23 ~ V1.0.27 (Day 49 - Day 60)<br>[Phase 6: 2027 通脹模型、全庫校對與 V2.0.9 正式版定型] V1.0.28 ~ V2.0.9</p>
+                        <p>[Phase 1: 數據清洗與原型驗證] V1.0.1 ~ V1.0.5 (Day 1 - Day 12)<br>[Phase 2: 雙向演算法與權重建模] V1.0.6 ~ V1.0.11 (Day 13 - Day 25)<br>[Phase 3: 專科學術壁壘與精準分流] V1.0.12 ~ V1.0.17 (Day 26 - Day 38)<br>[Phase 4: 極端值保護與年度衰減] V1.0.18 ~ V1.0.22 (Day 39 - Day 48)<br>[Phase 5: 產品化、商業轉化與介面重構] V1.0.23 ~ V1.0.27 (Day 49 - Day 60)<br>[Phase 6: 2027 通脹模型、全庫校對與 V2.0.9 正式版定型] V1.0.28 ~ V2.0.11</p>
                         
                         <p class="font-bold text-slate-500">Phase 1: 數據清洗與原型驗證 (Day 1 - Day 12)</p>
                         <p><b>V1.0.1 (Day 1) — 內部 Excel 數據初版彙編：</b>核心功能：整理歷屆過千筆學生自發回報的 Non-JUPAS Offer 紀錄，建立第一代扁平化工作表。技術瓶頸：原始數據充斥大量非結構化字串（如 "19分 55432"、"英文無3有7.0"），僅能依賴人工篩選與簡易 VLOOKUP，無法實現自動化比對。</p>
@@ -516,6 +516,8 @@
                         <p><b>V2.0.7 — 全庫 3,532 筆 Excel 深度交叉審計、CUHK 高年級商科誤植清理與數據科學 (DataStat) 先例互通修復版：</b>清理 Senior Entry 中無真實高年級收生紀錄之 CUHK 商科誤植條目（`S_CUHK_11` PAcc 與 `S_CUHK_14` Economics）；修復 Junior Entry 中 `Science Year 1 (stat)`、`DSBI`、`Applied Intelligent Technologies` 等縮寫漏判問題，並打通 HKU SPACE / HKCC 數據科學 (`DATA_STAT`) 與大類理學/工學/經濟先例於數統及 AI 課程上的互通匹配；補齊 `HKU Space Po Leung Kuk Stanley Ho Community College (HPSHCC)` 全稱與 `CPRJ` 先例映射，確保全庫每科中位數與先例 100% 貼合原始 Excel。</p>
                         <p><b>V2.0.8 — CityU Junior ESG 及金融雙學位專科拆解、HKBU Senior 六大文科獨立建檔與大類共用學額防誤導標註版：</b>同步最新 Junior Excel 數據庫，於 CityU 低年級新增環境工程及金融雙學位（`J_CITYU_10B`: `BEng Environmental Science and Engineering and BBA Finance - ESG & Green Finance`）與經濟及金融大類（`J_CITYU_9B`: `Economics and Finance`），並精準校準 `BBA Finance`（`J_CITYU_10`）、`BBA Business Economics`（`J_CITYU_9`）及 `BSc Computational Finance & FinTech`（`J_CITYU_15E`）之樣本與中位數；於 Senior Entry 將浸大文學院（HKBU BA）全面拆分為中文（`6A`）、創意及專業寫作（`6B`）、英文（`6C`）、歷史（`6D`）、人文學（`6E`）及翻譯（`6F`）六個獨立評估主修；並針對原始數據庫標註「全部文科/商科/傳理/理科/社科加埋」之大類共用學額實裝防誤導提示與權重保護，避免學生誤將學院總學額當作單一專修收生人數。</p>
                         <p><b>V2.0.9 — 全庫八大高年級與低年級合併課程全面拆解、CUHK 318 筆高年級獨立數據校準與大類共用學額標註版：</b>全面重構並還原香港中文大學（CUHK）高年級 318 筆真實收生紀錄（涵蓋 32 個獨立主修，補齊人類學、宗教研究、藝術系、會計 PAcc 及經濟學高年級數據，並清除過往混入之低年級紀錄）；將 HKU、HKUST、PolyU、CityU（AS1/AS2）、HKBU、EdUHK 及 LingU 在高年級與低年級數據庫中所有人工合併之獨立主修全面拆分為獨立評估項目，並同步更新 Junior Entry 黃白雙軌隔離子數據池與港大工科（34個）/ 理科（75個）及理大設計（23個）之大類共用學額防誤導標註。</p>
+                         <p><b>V2.0.10 — CityU 計算數學 (BSc Computing Mathematics) 與環球商業系統管理 (BBA GBSM) 19 筆收生個案補齊與黃白雙軌校準版：</b>補齊香港城市大學（CityU）低年級數據庫中 `BSc Computing Mathematics`（`J_CITYU_15B`，樣本由 1 筆擴充至 8 筆：2026 中位數校準為 `3.66`、2025 中位數 `3.69`、最低分 `3.33`，模式由 `YR1_MAIN` 升級為 `BOTH` 黃白雙軌互通，並補齊 HKCC 數統/IT 與 HKU SPACE 理學先例及面試要求）與 `BBA Global Business Systems Management`（`J_CITYU_11A`，樣本由 4 筆擴充至 11 筆：補入 2026 年 4 筆最新錄取數據 `3.89 ~ 4.12`，將 2026 中位數校準為 `3.98`、2025 中位數校準為 `3.82`、解除 Year 2 通道之 2026 數據斷層限制，並補齊 `HKUSPACE_Econ` 先例）。</p>
+                         <p><b>V2.0.11 — CityU 高年級 (AS1) 與低年級 (Year 1) 數據徹底分離、全港大專課程官方縮寫檢索庫擴充與「幽靈先例」自動放行版：</b>將城大 `BBA Global Business Systems Management` 之 8 筆 `AS1` 個案（2026 中位數 `3.98`、2025 中位數 `3.87`）與 `BSc Computing Mathematics` 之 1 筆 `AS1` 個案（`3.66`）正式獨立建入 Senior Entry（`S_CITY_AS1_9D` 及 `S_CITY_AS1_15C`），並還原 `J_CITYU_11A`（4 筆）與 `J_CITYU_15B`（7 筆）之純 Year 1 入學數據；於科目快選面板補齊全港大專院校官方課程簡稱（`AALH`、`AAMCCS`、`SWSA`、`MHPM`、`HDAHRC`、`CPRJ`、`HHKS`、`GRMG`、`CRCM`、`CDMD`、`SDS`、`EPC` 等）；解決真實跨科先例被硬性壁壘誤殺之「幽靈先例」問題；並細分高年級護理（`NURSING` vs `HEALTH_MHPM`）與商科跨專修（`ABA_MKT` 報純會計/金融）之對口度權重。</p>
 
                         
                                                      
@@ -719,9 +721,10 @@
             "J_CITYU_6B":{ yr1: [1, 0, 4.12, 4.12, 0, "HKCC_Business"], yr2: [3, 0, 3.94, 3.80, 0, "CUSCS_MediaComm,HKUSPACE_MediaComm,HKUSPACE_Law"] },
             "J_CITYU_7": { yr1: [43, 3.89, 3.70, 3.30, 1, "HKUSPACE_Business,HKCC_Business,HKUSPACE_Econ,SelfFinanced_Business"], yr2: [5, 3.84, 4.00, 3.59, 1, "HKUSPACE_Econ,HKCC_Business,HKUSPACE_Business,HKUSPACE_Law,HKUSPACE_MediaComm"] },
             "J_CITYU_9B":{ yr1: [4, 0, 3.84, 3.53, 0, "HKUSPACE_Business"], yr2: [1, 0, 3.78, 3.78, 0, "HKCC_Business"] },
-            "J_CITYU_11A":{ yr1: [1, 0, 3.60, 3.60, 0, "HKUSPACE_Business"], yr2: [3, 0, 3.82, 3.65, 0, "HKUSPACE_Hospitality,HKUSPACE_Business,HKCC_Business"] },
+           "J_CITYU_11A":{ yr1: [1, 0, 3.60, 3.60, 0, "HKUSPACE_Business"], yr2: [3, 0, 3.82, 3.65, 0, "HKUSPACE_Hospitality,HKUSPACE_Business,HKCC_Business"] },
             "J_CITYU_14A":{ yr1: [1, 0, 3.86, 3.86, 0, "HKUSPACE_SCIENCE"], yr2: [1, 0, 4.00, 4.00, 0, "HPSHCC_Health"] },
             "J_CITYU_14B":{ yr1: [3, 0, 3.66, 3.60, 0, "SelfFinanced_SCIENCE,HKUSPACE_SCIENCE,IVE_SCIENCE"], yr2: [1, 0, 3.88, 3.88, 0, "IVE_Health,IVE_SCIENCE"] },
+            "J_CITYU_15B":{ yr1: [6, 3.68, 3.69, 3.40, 1, "HKCC_DataStat,HKUSPACE_SCIENCE,HKUSPACE_DataStat"], yr2: [1, 3.33, 0, 3.33, 1, "HKCC_ENGIN_IT"] },
             "J_CITYU_16B":{ yr1: [1, 3.75, 0, 3.75, 1, "BUCIE_Design"], yr2: [1, 0, 3.80, 3.80, 0, "SelfFinanced_ENGIN_IT"] },
             "J_CITYU_18C":{ yr1: [1, 4.00, 0, 4.00, 1, "HKUSPACE_SocialSciences"], yr2: [2, 3.64, 3.43, 3.43, 1, "HPSHCC_SocialSciences,HKUSPACE_Law"] },
             "J_CITYU_19":{ yr1: [4, 3.72, 4.00, 3.72, 1, "HKUSPACE_SocialSciences,HKCC_SocialSciences"], yr2: [4, 4.00, 3.75, 3.65, 1, "HKUSPACE_SocialSciences,HKCC_SocialWork"] },
@@ -888,7 +891,7 @@
             ["J_CITYU_9B","CITYU","Economics and Finance (Majors: BBA Business Economics / BBA Finance)",5,0,3.78,3.84,3.53,0,"HKUSPACE_Business,HKCC_Business","Y1",0,"Business",0,0,"BOTH"],
             ["J_CITYU_10","CITYU","BBA Finance",1,0,3.40,3.46,3.40,0,"HKUSPACE_Business","Y1",0,"Business",0,0,"YR1_MAIN"],
             ["J_CITYU_10B","CITYU","BEng Environmental Science and Engineering and BBA Finance (Double Degree - ESG & Green Finance)",5,3.58,3.90,3.64,3.50,1,"HKUSPACE_SCIENCE,SelfFinanced_SCIENCE,SelfFinanced_Business,HKUSPACE_SocialSciences,HKUSPACE_ArchPortfolio","Y1",0,"Business",0,0,"YR1_MAIN"],
-            ["J_CITYU_11A","CITYU","BBA Global Business Systems Management",4,0,3.74,0,3.60,0,"HKUSPACE_Business,HKCC_Business,HKUSPACE_Hospitality","Y1",0,"Business",0,0,"BOTH"],
+            ["J_CITYU_11A","CITYU","BBA Global Business Systems Management",4,0,3.74,3.80,3.60,0,"HKUSPACE_Business,HKCC_Business,HKUSPACE_Hospitality","Y1",0,"Business",0,0,"BOTH"],
             ["J_CITYU_11B","CITYU","BBA Global Operations Management",2,3.77,0,0,3.54,1,"HKUSPACE_Business","Y1",0,"Business",0,0,"YR1_MAIN"],
             ["J_CITYU_12","CITYU","BBA Management",4,0,3.74,3.80,3.66,0,"HKUSPACE_Business,HKCC_Business,BUCIE_Business,SelfFinanced_Business","Y1",0,"Business",0,0,"YR1_MAIN"],
             ["J_CITYU_13","CITYU","BBA Marketing",17,3.72,3.55,3.78,3.20,1,"HKUSPACE_Business,HKCC_Business,HKUSPACE_Econ,SelfFinanced_Business","Y1",0,"Business",0,0,"YR1_MAIN"],
@@ -897,7 +900,7 @@
             ["J_CITYU_14C","CITYU","BSc Biomedical Sciences",10,4.00,3.88,4.06,3.53,1,"HKUSPACE_SCIENCE,HKUSPACE_Health,IVE_SCIENCE,IVE_Health,HPSHCC_Health","Y1",0,"SCIENCE",0,0,"YR2_DOWNGRADE_ONLY"],
             ["J_CITYU_15A","CITYU","BSc Computer Science",5,0,3.82,0,3.80,0,"IVE_ENGIN_IT,HKUSPACE_ENGIN_IT","Y1",0,"ENGIN_IT",0,0,"YR1_MAIN"],
             ["J_CITYU_15A2","CITYU","BSc Cybersecurity",3,0,3.86,0,3.70,0,"HKUSPACE_ENGIN_IT,HKUSPACE_SCIENCE,HKUSPACE_DataStat","Y1",0,"ENGIN_IT",0,0,"YR1_MAIN"],
-            ["J_CITYU_15B","CITYU","BSc Computing Mathematics",1,4.00,0,4.03,4.00,1,"HKUSPACE_DataStat","Y1",0,"DataStat",0,0,"YR1_MAIN"],
+            ["J_CITYU_15B","CITYU","BSc Computing Mathematics",7,3.67,3.69,3.70,3.33,1,"HKCC_DataStat,HKUSPACE_SCIENCE,HKUSPACE_DataStat,HKCC_ENGIN_IT","Y1",0,"DataStat",0,0,"BOTH"],
             ["J_CITYU_15C","CITYU","Bachelor of Science in Data Science",2,0,3.56,3.62,3.28,0,"BUCIE_Business,HKUSPACE_Sports","Y1",0,"DataStat",0,0,"YR2_DOWNGRADE_ONLY"],
             ["J_CITYU_15D","CITYU","BSc Data and Systems Engineering",1,3.90,0,3.93,3.90,1,"HKCC_Business","Y1",0,"DataStatMix",0,0,"YR2_DOWNGRADE_ONLY"],
             ["J_CITYU_15E","CITYU","BSc Computational Finance and Financial Technology",2,0,3.86,3.92,3.86,0,"HKCC_Business","Y1",0,"DataStatMix",0,0,"YR2_DOWNGRADE_ONLY"],
@@ -1140,6 +1143,7 @@
             ["S_CITY_AS1_9A","CITYU","Bachelor of Business Administration in Marketing",24,3.66,3.72,0,3.23,1,"HKCC_Business,HKUSPACE_Business,HKUSPACE_Econ,SelfFinanced_Business,UOWCHK_Business,HKCC_Hospitality,HKUSPACE_Hospitality","AS1",0,"Business",73],
             ["S_CITY_AS1_9B","CITYU","Bachelor of Business Administration in Management",8,3.52,3.50,0,3.21,1,"HKCC_Business,HKUSPACE_Business,HKUSPACE_Econ,HKCC_Hospitality","AS1",0,"Business",30],
             ["S_CITY_AS1_9C","CITYU","Bachelor of Business Administration in Global Operations Management",5,3.60,3.60,0,3.54,1,"HKCC_Business,HKUSPACE_Business,HKCC_Hospitality","AS1",0,"Business",21],
+            ["S_CITY_AS1_9D","CITYU","Bachelor of Business Administration in Global Business Systems Management",8,3.98,3.87,4.04,3.72,1,"HKUSPACE_Business,HKCC_Business,HKUSPACE_Econ","AS1",0,"Business",20],
             ["S_CITY_AS2_9A","CITYU","Bachelor of Business Administration in Marketing",38,3.59,3.57,0,2.80,1,"HKCC_Business,HKUSPACE_Business,HKUSPACE_Econ,SelfFinanced_Business,UOWCHK_Business,HKCC_Hospitality,HKUSPACE_Hospitality","AS2",6.5,"Business",73],
             ["S_CITY_AS2_9B","CITYU","Bachelor of Business Administration in Management",21,3.64,3.82,0,3.21,1,"HKCC_Business,HKUSPACE_Business,HKUSPACE_Econ,SelfFinanced_Business,HKCC_Hospitality","AS2",6.5,"Business",30],
             ["S_CITY_AS2_9C","CITYU","Bachelor of Business Administration in Global Operations Management",12,3.69,3.58,0,3.20,1,"HKCC_Business,HKUSPACE_Business,HKUSPACE_Econ,HKCC_Hospitality,HKUSPACE_Hospitality","AS2",6.5,"Business",21],
@@ -1156,7 +1160,8 @@
             ["S_CITY_AS1_14","CITYU","Bachelor of Science in Computer Science",32,3.70,3.80,3.74,3.40,1,"IVE_ENGIN_IT,HKCC_ENGIN_IT,HKUSPACE_ENGIN_IT,HPSHCC_ENGIN_IT","AS1",0,"ENGIN_IT",26],
             ["S_CITY_AS2_14","CITYU","Bachelor of Science in Computer Science",18,3.80,3.68,3.86,3.53,1,"IVE_ENGIN_IT,HKCC_ENGIN_IT","AS2",0,"ENGIN_IT",26],
             ["S_CITY_AS1_15","CITYU","Bachelor of Science in Data Science",9,0,3.54,3.60,3.35,0,"IVE_DataStat,HKCC_DataStat,HKUSPACE_DataStat,SelfFinanced_DataStat,IVE_ENGIN_IT,HKCC_ENGIN_IT,HKUSPACE_ENGIN_IT","AS1",0,"DataStat",5],
-            ["S_CITY_AS1_15B","CITYU","Bachelor of Science in Data and Systems Engineering",4,3.56,3.72,3.62,3.56,1,"IVE_ENGIN_IT,SelfFinanced_ENGIN_IT,SelfFinanced_DataStat","AS1",0,"DataStatMix",5],
+           ["S_CITY_AS1_15B","CITYU","Bachelor of Science in Data and Systems Engineering",4,3.56,3.72,3.62,3.56,1,"IVE_ENGIN_IT,SelfFinanced_ENGIN_IT,SelfFinanced_DataStat","AS1",0,"DataStatMix",5],
+            ["S_CITY_AS1_15C","CITYU","Bachelor of Science in Computing Mathematics",1,3.66,0,3.69,3.66,1,"HKUSPACE_DataStat,HKUSPACE_SCIENCE","AS1",0,"DataStat",5],
             ["S_CITY_AS1_16","CITYU","Bachelor of Social Sciences in Criminology and Sociology",20,3.40,3.55,3.46,3.14,1,"HKUSPACE_SocialSciences,HKCC_SocialSciences,HPSHCC_SocialSciences,IVE_SocialSciences","AS1",0,"SocialSciences",70],
             ["S_CITY_AS2_16","CITYU","Bachelor of Social Sciences in Criminology and Sociology",46,3.56,3.53,3.59,3.04,1,"HKUSPACE_SocialSciences,HKCC_SocialSciences,HPSHCC_SocialSciences,HPSHCC_MediaComm,HKUSPACE_Arts,HKCC_Arts,BUCIE_Arts,BUCIE_SocialSciences,LINGULIFE_SocialSciences,MULIPACE_SocialSciences","AS2",0,"SocialSciences",70],
             ["S_CITY_AS1_17","CITYU","Bachelor of Social Sciences in Psychology",7,3.80,3.98,3.86,3.74,1,"HKUSPACE_SocialSciences,HPSHCC_SocialSciences","AS1",0,"SocialSciences",30],
@@ -1328,40 +1333,40 @@
 
         const MAJOR_PICKER_DATA = [
             // 商科、經濟與酒管
-            { code: 'GEN_BIZ', cat: 'BIZ', title: '通用商學 (General Business)', sub: 'ABA / Business Administration / BM / International Business', badge: '商學大類' },
-            { code: 'ABA_ACC', cat: 'BIZ', title: '會計及金融規劃 (Accounting)', sub: 'Accounting / Professional Accountancy / Financial Planning', badge: '會計專修' },
-            { code: 'ABA_FIN', cat: 'BIZ', title: '金融及銀行學 (Finance / FinTech)', sub: 'Finance / Financial Technology / Banking / Investment', badge: '金融專修' },
-            { code: 'ABA_MKT', cat: 'BIZ', title: '市場學、管理及供應鏈 (Mkt / Mgt / SCM)', sub: 'Marketing / HRM / Management / Global Supply Chain / Logistics', badge: '市場及管理' },
-            { code: 'AECON', cat: 'BIZ', title: '經濟學及應用經濟 (Economics / AEcon — 具數理計量優勢)', sub: 'Associate of Economics / Applied Economics (支援報讀應用數學金融分析、數據科學及商科)', badge: '經濟專修' },
-            { code: 'HOSP_TOUR', cat: 'BIZ', title: '酒店、旅遊及款待管理 (Hospitality / Hotel & Tourism Mgt)', sub: 'Hotel Management / Tourism & MICE / Hospitality Management', badge: '酒管旅遊' },
+            { code: 'GEN_BIZ', cat: 'BIZ', title: '通用商學 (General Business / ABA / Business NS)', sub: 'ABA (AD111) / Business NS (8C108-NS) / BM / International Business', badge: '商學大類' },
+            { code: 'ABA_ACC', cat: 'BIZ', title: '會計及金融規劃 (Accounting / FP)', sub: 'ABA (Accounting) / Professional Accountancy / Financial Planning (FP)', badge: '會計專修' },
+            { code: 'ABA_FIN', cat: 'BIZ', title: '金融及銀行學 (Finance / FinTech)', sub: 'ABA (Finance) / Financial Technology / Banking / Investment', badge: '金融專修' },
+            { code: 'ABA_MKT', cat: 'BIZ', title: '市場學、管理及供應鏈 (Mkt / Mgt / HRM / SCM)', sub: 'ABA (Marketing / HRM / Management) / Global Supply Chain / Logistics (LM)', badge: '市場及管理' },
+            { code: 'AECON', cat: 'BIZ', title: '經濟學及應用經濟 (Economics / AEcon — 具數理計量優勢)', sub: 'AEcon (AD111) / Associate of Economics / Applied Economics (支援報讀數理金融及數據科)', badge: '經濟專修' },
+            { code: 'HOSP_TOUR', cat: 'BIZ', title: '酒店、旅遊及款待管理 (Hospitality / Hotel & Tourism / MICE)', sub: 'BHM / HM / Tourism & MICE / Event Management / Hospitality Management', badge: '酒管旅遊' },
             // 工科、IT、數統與建築測量
-            { code: 'ENGIN', cat: 'STEM', title: '工程學 (Civil / Mech / EE / Building / Aviation)', sub: '土木 / 機械 / 電機及電子 / 屋宇設備 / 航空工程', badge: '工程專科' },
-            { code: 'CS_IT', cat: 'STEM', title: '計算機與資訊科技 (CS / IT / Software Eng / AI)', sub: 'Computer Science / Software Eng / Information Tech / AI / Cybersecurity', badge: '電腦及IT' },
-            { code: 'DATA_STAT', cat: 'STEM', title: '數據科學、統計及數學 (Data Science / Statistics / Mathematics)', sub: 'Data Science / Statistics / Mathematics / Business Analytics', badge: '數統專科' },
-            { code: 'SURV_PROP', cat: 'STEM', title: '測量、物業管理及建築工程管理 (Surveying / Property Mgt / BEM — 免作品集)', sub: 'Surveying / Property Management / Building Eng & Mgt / Land Surveying', badge: '測量及物管' },
-            { code: 'ARCH_BUILT', cat: 'STEM', title: '建築學、室內及園境設計 (Architecture / Landscape / Interior — 備有作品集)', sub: 'Architectural Studies / Landscape Architecture / Environment & Interior Design', badge: '建築(需作品集)' },
+            { code: 'ENGIN', cat: 'STEM', title: '工程學 (Civil / Mech / EE / Building / Aviation)', sub: 'AENG / CEE / BSE / CE / EE / ME / 土木 / 機械 / 電機電子 / 屋宇設備 / 航空工程', badge: '工程專科' },
+            { code: 'CS_IT', cat: 'STEM', title: '計算機與資訊科技 (CS / IT / Software Eng / AI)', sub: 'CS / IT / CDS / CSD / HDIT / Software Eng / AI / Cybersecurity', badge: '電腦及IT' },
+            { code: 'DATA_STAT', cat: 'STEM', title: '數據科學、統計及數學 (Data Science / Statistics / Math)', sub: 'SDS (8C112-SDS) / DSBI / Data Science / Statistics / Mathematics / Business Analytics', badge: '數統專科' },
+            { code: 'SURV_PROP', cat: 'STEM', title: '測量、物業管理及建築工程管理 (Surveying / Property Mgt / BEM — 免作品集)', sub: 'Surveying / Property Management / Building Eng & Mgt (BEM) / Land Surveying', badge: '測量及物管' },
+            { code: 'ARCH_BUILT', cat: 'STEM', title: '建築學、室內及園境設計 (Architecture / Landscape / Interior — 備有作品集)', sub: 'Architectural Studies / Landscape Architecture / Environment & Interior Design (EI)', badge: '建築(需作品集)' },
             // 純理科、醫護、中醫與運動科學
-            { code: 'SCIENCE', cat: 'SCI_HEALTH', title: '生物、化學、環境及食品科學 (Science / Bio / Chem / Env / Food Sci)', sub: 'Biological Sci / Biomedical / Chemistry / Analytical & Testing / Food Sci', badge: '純理及生化' },
+            { code: 'SCIENCE', cat: 'SCI_HEALTH', title: '生物、化學、環境及食品科學 (Science / Bio / Chem / ABMS / Food Sci)', sub: 'ASc / ABMS (Biomedical) / Biological Sci / Chemistry / Analytical & Testing / Food Sci', badge: '純理及生化' },
             { code: 'PHY_SCI', cat: 'SCI_HEALTH', title: '物理、地球與材料科學 (Physics / Earth & Materials Science)', sub: 'Physics / Earth & Environmental Sciences (支援跨報電子及機械工科)', badge: '物理及地球' },
-            { code: 'NURSING', cat: 'SCI_HEALTH', title: '護理學 (Nursing)', sub: 'Nursing Studies / Health Studies (Nursing Stream)', badge: '護理專科' },
-            { code: 'CHIN_MED', cat: 'SCI_HEALTH', title: '中醫學 (Chinese Medicine)', sub: 'Chinese Medicine / Chinese Medicinal Pharmacy', badge: '中醫專科' },
-            { code: 'HEALTH_MHPM', cat: 'SCI_HEALTH', title: '醫療保健、營養及康復科學 (Health Studies / Nutrition / Rehab)', sub: 'Health Studies / Nutrition & Food Management / Rehabilitation Services', badge: '醫療及營養' },
-            { code: 'SPORTS', cat: 'SCI_HEALTH', title: '運動科學、體育及康樂管理 (Sports Science / Coaching & Recreation Mgt)', sub: 'Sports Science / Sports Coaching / Recreation & Leisure Management', badge: '運動及體育' },
+            { code: 'NURSING', cat: 'SCI_HEALTH', title: '護理學 (Nursing / ANS / Health Studies Nursing)', sub: 'ANS (Associate of Nursing Studies) / HS (8C106 Health Studies) / FHDHC', badge: '護理專科' },
+            { code: 'CHIN_MED', cat: 'SCI_HEALTH', title: '中醫學及中藥學 (Chinese Medicine / Chinese Medicinal Pharmacy)', sub: 'Chinese Medicine / Chinese Medicinal Pharmacy', badge: '中醫專科' },
+            { code: 'HEALTH_MHPM', cat: 'SCI_HEALTH', title: '醫療保健、營養及康復科學 (Health Studies / MHPM / Nutrition / Rehab)', sub: 'MHPM (醫療及保健產品管理) / HDAHRC (康復護理) / HHPA / NUFM (營養) / Health Studies', badge: '醫療及營養' },
+            { code: 'SPORTS', cat: 'SCI_HEALTH', title: '運動科學、體育及康樂管理 (Sports Science / PERM / SCSP / SRM)', sub: 'PERM / SCSP (運動教練) / SRM / SRS / Sports Science / Recreation & Leisure Mgt', badge: '運動及體育' },
             // 法律與社會科學類
-            { code: 'LAW', cat: 'SOC_LAW', title: '法律與行政學 (Legal Studies / Law / Criminal Justice)', sub: 'Legal Studies / Law / Crime & Criminal Justice', badge: '法律專修' },
-            { code: 'SOC_GEN', cat: 'SOC_LAW', title: '社會科學、社會學、政治及地理 (Social Sciences / Geog / GIS)', sub: 'Social Sciences / Sociology / Geography / GIS / Politics & Public Admin', badge: '社科及地理' },
-            { code: 'PSY', cat: 'SOC_LAW', title: '心理學及輔導 (Psychology)', sub: 'Psychology / Counselling / Applied Psychology', badge: '心理及輔導' },
-            { code: 'SOC_WORK', cat: 'SOC_LAW', title: '社會工作 (Social Work)', sub: 'Social Work (社工註冊局專業認可副學位先修)', badge: '社工專科' },
+            { code: 'LAW', cat: 'SOC_LAW', title: '法律與行政學 (Legal Studies / AALS / Law / Criminal Justice)', sub: 'AALS (Associate of Arts in Legal Studies) / Law / Crime & Criminal Justice', badge: '法律專修' },
+            { code: 'SOC_GEN', cat: 'SOC_LAW', title: '社會科學、社福行政、政治及地理 (Social Sciences / SWSA / YSS / GRMG)', sub: 'Social Sciences (NS) / SWSA / SASW / YSS (青年及社會服務) / SPA / SPPS / GRMG / AGEO / HHKS', badge: '社科及地理' },
+            { code: 'PSY', cat: 'SOC_LAW', title: '心理學及輔導 (Psychology / Counselling / CSS)', sub: 'Psychology / CSS (8C111-CSS Counselling for Social Services) / Applied Psychology', badge: '心理及輔導' },
+            { code: 'SOC_WORK', cat: 'SOC_LAW', title: '社會工作 (Social Work / HDSW — 註冊社工副學位先修)', sub: 'HDSW (8C123) / Social Work (社工註冊局專業認可副學位先修)', badge: '社工專科' },
             // 人文、語文、傳理、設計、音樂與教育類
-            { code: 'AALH', cat: 'ARTS_DESIGN', title: '語文、人文及歷史哲學 (Languages & Humanities / History / Phil)', sub: 'Languages & Humanities / History / Philosophy / Japanese & Korean', badge: '人文及歷史' },
-            { code: 'AAELL', cat: 'ARTS_DESIGN', title: '英國語言及文學 (English Studies)', sub: 'English Language & Literature / English for Professional Communication', badge: '英文系專修' },
-            { code: 'CHIN_CLL', cat: 'ARTS_DESIGN', title: '中國語言及文學 (Chinese / CLL)', sub: 'Chinese Language & Literature / Applied Chinese Studies', badge: '中文系專修' },
-            { code: 'TRANS', cat: 'ARTS_DESIGN', title: '翻譯及雙語傳譯 (Translation)', sub: 'Translation & Interpretation / Bilingual Communication', badge: '翻譯專修' },
-            { code: 'COMM', cat: 'ARTS_DESIGN', title: '傳理、新聞及公關廣告 (Comm / PR / Journalism)', sub: 'Communication / Public Relations & Advertising / Journalism', badge: '傳理及公關' },
-            { code: 'MCCS', cat: 'ARTS_DESIGN', title: '媒體、文化及創意研究 (Media & Cultural Studies)', sub: 'Media, Cultural & Creative Studies / New Media', badge: '媒體及文化' },
-            { code: 'DESIGN_MEDIA', cat: 'ARTS_DESIGN', title: '設計、視覺傳意及創意媒體 (Design / Visual Art / Creative Media — 備有作品集)', sub: 'Advertising / Visual Communication / Interior & Environment / Creative Media', badge: '設計及視藝' },
-            { code: 'MUSIC', cat: 'ARTS_DESIGN', title: '音樂及表演藝術 (Music)', sub: 'Music / Performing Arts / Creative & Digital Arts', badge: '音樂及藝術' },
-            { code: 'ECE_EDU', cat: 'ARTS_DESIGN', title: '幼兒教育及特殊教育 (Early Childhood / Special Ed)', sub: 'Early Childhood Education (ECE) / Special Education', badge: '幼教及特教' }
+            { code: 'AALH', cat: 'ARTS_DESIGN', title: '語文、人文及歷史哲學 (AALH / AA / History / HHKS / Phil / 日韓文)', sub: 'AALH (AD105 Humanities / JS 日本語 / 韓語) / AA (8C110-AA) / HHKS (History & HK Studies) / Phil', badge: '人文及歷史' },
+            { code: 'AAELL', cat: 'ARTS_DESIGN', title: '英國語言及文學 (English Studies / AAELL / EPC)', sub: 'AAELL / AALH (English Studies) / EPC (8C110-EPC 專業傳意英語)', badge: '英文系專修' },
+            { code: 'CHIN_CLL', cat: 'ARTS_DESIGN', title: '中國語言及文學 (Chinese / CLL / CLLC / CPPS)', sub: 'CLL (8C110-CLL) / AALH (CLLC 中文) / CPPS (專業中文) / AALC', badge: '中文系專修' },
+            { code: 'TRANS', cat: 'ARTS_DESIGN', title: '翻譯及雙語傳譯 (Translation / TI / Bilingual Comm)', sub: 'Translation & Interpretation (8C110-TI) / AALH (Bilingual Communication)', badge: '翻譯專修' },
+            { code: 'COMM', cat: 'ARTS_DESIGN', title: '傳理、新聞及公關廣告 (Comm / CPRJ / CRCM / PR / Journalism)', sub: 'CPRJ (HPSHCC傳理) / CRCM / MECM / PR (8C110-PR) / Journalism & Advertising', badge: '傳理及公關' },
+            { code: 'MCCS', cat: 'ARTS_DESIGN', title: '媒體、文化及創意研究 (AAMCCS / MCCS / FTDM / CAMD)', sub: 'AAMCCS (AD109) / MCCS / FTDM (電影電視數碼媒體) / CAMD / New Media', badge: '媒體及文化' },
+            { code: 'DESIGN_MEDIA', cat: 'ARTS_DESIGN', title: '設計、視覺傳意及創意媒體 (Design / CDMD / Visual Art / Creative Media — 備有作品集)', sub: 'CDMD / Advertising / Visual Communication / Interior & Creative Media (需作品集)', badge: '設計及視藝' },
+            { code: 'MUSIC', cat: 'ARTS_DESIGN', title: '音樂及表演藝術 (Music / AAMCCS Music Theme / Performing Arts)', sub: 'Music Studies / AAMCCS (Music Theme) / Performing Arts / Creative & Digital Arts', badge: '音樂及藝術' },
+            { code: 'ECE_EDU', cat: 'ARTS_DESIGN', title: '幼兒教育及特殊教育 (Early Childhood / ECE / Special Ed)', sub: 'Early Childhood Education (ECE) / Special Education', badge: '幼教及特教' }
         ];
 
         const INST_LABEL_MAP = {
@@ -2032,7 +2037,7 @@
             if (u === 'POLYU' && (str.includes('APPLIED BIOLOGY') || str.includes('ANALYTICAL SCIENCES') || str.includes('FOOD SAFETY') || str.includes('MECHANICAL') || str.includes('AVIATION ENGINEERING') || str.includes('AIR TRANSPORT') || str.includes('BIOMEDICAL'))) {
                 return { type: 'must', text: '需面試' };
             }
-            if (u === 'CITYU' && (str.includes('CHEMISTRY') || str.includes('ARCHITECTURE AND SURVEYING'))) {
+            if (u === 'CITYU' && (str.includes('CHEMISTRY') || str.includes('ARCHITECTURE AND SURVEYING') || str.includes('COMPUTING MATHEMATICS'))) {
                 return { type: 'must', text: '需面試' };
             }
             if (['CITYU', 'POLYU'].includes(u) && (disc === 'ENGIN_IT' || disc === 'ArchSurv' || disc === 'DataStat' || disc === 'DataStatMix' || disc === 'SCIENCE' || str.includes('ACCOUNTANCY'))) {
@@ -2092,9 +2097,17 @@
             if (userDisc === 'DataStat' && isDataStatCompatibleProg) {
                 checkKeys.push(`${userState.inst}_SCIENCE`, `${userState.inst}_ENGIN_IT`, `${userState.inst}_Econ`);
             }
+            // V2.0.11：打通 BUCIE 歷史及香港研究 (HHKS) 於文社科雙向先例，以及 AAMCCS (Music Theme) 於音樂系先例
+            if (userState.inst === 'BUCIE' && (userDisc === 'SocialSciences' || userDisc === 'Arts') && ['Arts', 'SocialSciences', 'PrimaryGenEd'].includes(item.disc)) {
+                checkKeys.push('BUCIE_Arts', 'BUCIE_SocialSciences');
+            }
+            if (userState.majorDetailed === 'MCCS' && item.disc === 'Music') {
+                checkKeys.push(`${userState.inst}_Music`);
+            }
 
             let hasSameInstPrecedent = item.precedents.some(k => checkKeys.includes(k));
             let hasAnyDiscPrecedentInExcel = item.precedents.some(k =>
+                checkKeys.some(ck => k.endsWith(`_${ck.split('_')[1]}`)) ||
                 k.endsWith(`_${userDisc}`) ||
                 (userDisc === 'Econ' && (item.disc === 'Business' || item.disc === 'DataStatMix') && k.endsWith('_Business')) ||
                 (userDisc === 'Business' && item.disc === 'Business' && k.endsWith('_Econ')) ||
@@ -2140,7 +2153,17 @@
                 };
             }
 
-            let rel = checkDisciplineRelation(userDisc, userState.majorDetailed, item.disc, item.p);
+           let rel = checkDisciplineRelation(userDisc, userState.majorDetailed, item.disc, item.p);
+            // V2.0.11：高年級 Nursing 嚴格要求 Nursing 專修才可列為 100% 專業對口；非護理健康科學 (HEALTH_MHPM) 改按跨科評估，防止誤入保底區
+            if (!isJrItem && userState.majorDetailed === 'HEALTH_MHPM' && pUpCheck.includes('NURSING')) {
+                rel = { isStrictMatch: false, isAllowedCross: true, isBlocked: false, blockReason: "" };
+            }
+            // V2.0.11：消除「幽靈先例」矛盾 — 若 Excel 真實存在該專業錄取先例（非高年級醫護/社工/中醫法定牌照壁壘），自動放行為跨科可選
+            let isHardLicensure = (item.disc === 'SocialWork' || item.disc === 'ChineseMedicine' || (!isJrItem && item.disc === 'Health'));
+            if (rel.isBlocked && hasAnyDiscPrecedentInExcel && (!isHardLicensure || (isJrItem && hasSameInstPrecedent))) {
+                rel = { isStrictMatch: false, isAllowedCross: true, isBlocked: false, blockReason: "" };
+            }
+
             let effectiveGpa = userState.gpa;
             let tags = [];
             let forwardTags = [];
@@ -2320,9 +2343,15 @@
             let pUpper = item.p.toUpperCase();
             let isHospFriendlyBiz = pUpper.includes('AVIATION') || pUpper.includes('MARKETING') || pUpper.includes('MANAGEMENT') || pUpper.includes('SUPPLY CHAIN') || pUpper.includes('SHIPPING') || pUpper.includes('LOGISTICS') || pUpper.includes('OPERATIONS') || pUpper.includes('RETAIL') || pUpper.includes('ENTREPRENEURSHIP');
 
-            if (rel.isStrictMatch) {
-                effectiveGpa += 0.02;
-                breakdown.push({ label: '專業高度對口', val: '+0.02', desc: '你目前修讀的範疇與目標大學課程直接對口' });
+           if (rel.isStrictMatch) {
+                if (userState.majorDetailed === 'ABA_MKT' && (pUpper.includes('ACCOUNT') || pUpper.includes('FINANCE')) && !pUpper.includes('MARKETING') && !pUpper.includes('MANAGEMENT') && !pUpper.includes('AVIATION')) {
+                    effectiveGpa -= 0.04;
+                    tags.push("Mkt/Mgt跨報會計金融");
+                    breakdown.push({ label: '商科專修微調 (Mkt/Mgt 報會計/金融)', val: '-0.04', desc: '純會計及金融學系優先青睞 Acc/Fin 專修，市場及管理專修微幅調整' });
+                } else {
+                    effectiveGpa += 0.02;
+                    breakdown.push({ label: '專業高度對口', val: '+0.02', desc: '你目前修讀的範疇與目標大學課程直接對口' });
+                }
             } else if (item.disc === 'CrossMajorSink') {
                 tags.push("跨科友善科目");
                 breakdown.push({ label: '跨科匯流課程', val: '0.00', desc: '此課程廣泛接納不同專修背景且具真實錄取紀錄' });
@@ -2624,13 +2653,14 @@
                     }
                 }
             } else if (rel.isAllowedCross) {
-                if ((hasSameInstPrecedent || item.disc === 'CrossMajorSink' || isHospCross || isEngCsCross || isEconDataCross) && (item.count >= 4 || item.disc === 'CrossMajorSink' || item.disc === 'Hospitality' || isEngCsCross || isEconDataCross) && diff >= -0.05 && item.has2026 && !isCrushedByNorm) {
+                if ((hasSameInstPrecedent || item.disc === 'CrossMajorSink' || isHospCross || isEngCsCross || isEconDataCross) && diff >= -0.05 && item.has2026 && !isCrushedByNorm) {
                     finalCategory = 'cross';
-                    let crossCap = isOver4Gpa ? 50 : (item.isPortfolioRequired ? 60 : 64);
+                    if (item.count <= 3) tags.push(`跨科小樣本(${item.count}筆)`);
+                    let crossCap = isOver4Gpa ? 50 : (item.isPortfolioRequired ? 60 : (item.count <= 3 ? 58 : 64));
                     winRate = Math.min(Math.max(winRate, 45), crossCap);
-                } else if (hasSameInstPrecedent && (isHospCross || isEngCsCross || isEconDataCross) && diff >= -0.22 && item.has2026) {
+                } else if ((hasSameInstPrecedent || hasAnyDiscPrecedentInExcel || isHospCross || isEngCsCross || isEconDataCross) && (diff >= -0.22 || !item.has2026)) {
                     finalCategory = 'reach';
-                    winRate = Math.min(winRate, 44);
+                    winRate = Math.min(winRate, item.has2026 ? 44 : (isTop3 ? 12 : 15));
                 } else {
                     finalCategory = 'drop';
                     winRate = Math.min(winRate, 20);
@@ -3607,7 +3637,7 @@
                         "Accept": "application/json"
                     },
                     body: JSON.stringify({
-                        _subject: `[AssoKey 計算機 V2.0.9 回報] ${type}`,
+                        _subject: `[AssoKey 計算機 V2.0.11 回報] ${type}`,
                         回報類別: type,
                         問題內容: msg,
                         聯絡方式: contact,
@@ -3640,7 +3670,7 @@
                 return;
             }
 
-            const subject = encodeURIComponent(`[AssoKey 計算機 V2.0.9 回報] ${type}`);
+            const subject = encodeURIComponent(`[AssoKey 計算機 V2.0.11 回報] ${type}`);
             const body = encodeURIComponent(
                 `【回報類別】：${type}\n` +
                 `【問題詳情】：\n${msg}\n\n` +
